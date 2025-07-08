@@ -128,24 +128,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# def main():
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("--input", required=True)
-    # parser.add_argument("--output", required=True)
-    # args = parser.parse_args()
-
-    # with open("dataset.json") as f:
-    #     partners = json.load(f)
-    #
-    # partners_by_id, children, roots = build_tree(partners)
-    # if detect_cycles(partners_by_id, children, roots):
-    #     print("Hierarchy error: cycle or orphan detected.")
-    #     exit(1)
-    #
-    # commissions = compute_commissions(partners_by_id, children, roots)
-    # with open("test.json", "w") as f:
-    #     json.dump(commissions, f, indent=2)
-
-# if __name__ == "__main__":
-#     main()
