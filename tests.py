@@ -5,13 +5,6 @@ from main import MLMCommissionCalculator
 
 
 class TestMLMCommissionCalculator:
-    def create_temp_json_file(self, data):
-        """Helper method to create a temporary JSON file."""
-        with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.json') as temp_file:
-            json.dump(data, temp_file)
-            temp_file.close()
-            return temp_file.name
-
     def test_single_partner_no_descendants(self):
         """Test a single partner with no descendants has zero commission."""
         partners = [
